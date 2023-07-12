@@ -1,0 +1,173 @@
+/* Reset default browser styles */
+html, body, ul, li, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+.animated-header {
+  opacity: 0;
+  animation: fade-in 3s ease-in-out forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  line-height: 1.6;
+  color: #333;
+  background-image: url('background.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+header h1 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  color: #ddd;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+section {
+  padding: 80px 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin-top: 60px;
+}
+
+#hero {
+  text-align: center;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.tagline {
+  font-size: 24px;
+  font-weight: 400;
+  color: #888;
+  margin-bottom: 40px;
+}
+
+section h2 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+section p {
+  margin-bottom: 20px;
+}
+
+.project {
+  margin-bottom: 40px;
+}
+
+.project h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+}
+
+button[type="submit"] {
+  margin-top: 10px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+
+footer {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
